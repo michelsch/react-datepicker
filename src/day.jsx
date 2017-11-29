@@ -93,7 +93,7 @@ export default class Day extends React.Component {
   isInSelectingRange = () => {
     const { day, selectsStart, selectsEnd, selectingDate, startDate, endDate } = this.props
 
-    if (!(selectsStart || selectsEnd) || !selectingDate || this.isDisabled()) {
+    if (!(selectsStart || selectsEnd) || !selectingDate) {
       return false
     }
 
